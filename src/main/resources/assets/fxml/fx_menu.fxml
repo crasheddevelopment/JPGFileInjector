@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--
+  ~ Copyright © 2019 - 2020 CrashedDevelopment
+  ~
+  ~ This is a non-commercial project.
+  ~ All rights belong to their respective owners.
+  ~ You are allowed to change the software as long as no illegal content is created and / or distributed.
+  ~ All rights and information about the used libraries in the LICENSE_APACHE_2.0 / LIBRARIES and at the point "Libraries" and "Used Libraries" here.
+  ~ The license from the project contains in the file LICENSE_PROJECT!
+  ~
+  ~ You are allowed to use following changes at this software:
+  ~     - Creates new features
+  ~     - Modify source code. (Without the identification of "// Do not remove this.")
+  ~     - Publish your changes. (non-commercial)
+  ~     - Send changes to us to improve or add new features.
+  ~
+  ~ You are not allowed to do:
+  ~     - Publish the software for a commercial use without our permission.
+  ~     - Infect users with viruses or to do any other illegal content.
+  ~
+  ~ For news, updates and support:
+  ~ https://discord.gg/CBkXXKa
+  ~
+  ~ Development Team:
+  ~
+  ~ CrashedLife | Sören (Developed everything.):
+  ~ Discord: CrashedLife#9417
+  ~ Twitter: https://twitter.com/sqliCrashedLife
+  ~ Github: https://github.com/CrashedLife
+  ~ YouTube: https://www.youtube.com/channel/UC3alimqGC2YcgEK7jc_N4mg
+  ~
+  ~ Luca (Staff):
+  ~ Discord: Luca.#1337
+  ~ Twitter: https://twitter.com/luca1337_
+  ~
+  ~ Libraries:
+  ~ We used libraries to complete our project and respect and thanks every single owner that created the library.
+  ~ If some owner has problems with it please contact us.
+  ~
+  ~ Used Libraries:
+  ~  JFoeniX © jfoenixadmin
+  ~  Github: https://github.com/jfoenixadmin/
+  ~  JFoeniX: https://github.com/jfoenixadmin/JFoenix
+  ~  License: Apache 2.0 (Under LICENSE_APACHE_2.0)
+  ~
+  ~  Guava © Google
+  ~  Repository: https://mvnrepository.com/artifact/com.google.guava/guava/28.2-jre/
+  ~  License: Apache 2.0 (Under LICENSE_APACHE_2.0.txt)
+  -->
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="744.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.crasheddevelopment.jpgfileinjector.core.ui.controller.FXMenuController">
+  <tabs>
+    <Tab text="Injector">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="503.0" fitWidth="854.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/background.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="14.0" layoutY="14.0" text="JPG File:">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.07142857142857142" startY="0.5476190476190477">
+                           <stops>
+                              <Stop color="#d01686" />
+                              <Stop color="#d01686" offset="0.27586206896551724" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="75.0" text="Other File:">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.07142857142857142" startY="0.5476190476190477">
+                           <stops>
+                              <Stop color="#d01686" />
+                              <Stop color="#d01686" offset="0.27586206896551724" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <JFXTextField fx:id="jpgPathTextField" focusColor="#ab1866" layoutX="16.0" layoutY="37.0" prefHeight="25.0" prefWidth="391.0" promptText="Enter JPG file path" />
+                  <JFXTextField fx:id="otherPathTextField" focusColor="#ab1866" layoutX="16.0" layoutY="98.0" prefHeight="25.0" prefWidth="391.0" promptText="Enter other file path" />
+                  <JFXButton onAction="#browseJPGFile" buttonType="RAISED" layoutX="545.0" layoutY="37.0" prefHeight="25.0" prefWidth="105.0" ripplerFill="#3749a6" text="Browse File" textFill="#fc17b3" />
+                  <JFXButton onAction="#browseOtherFile" buttonType="RAISED" layoutX="545.0" layoutY="98.0" prefHeight="25.0" prefWidth="105.0" ripplerFill="#3749a6" text="Browse File" textFill="#fc17b3" />
+                  <JFXButton onAction="#inject" buttonType="RAISED" layoutX="16.0" layoutY="138.0" prefHeight="25.0" prefWidth="396.0" ripplerFill="#3749a6" text="Inject" textFill="#fc17b3" />
+                  <JFXButton onAction="#uninject" buttonType="RAISED" layoutX="16.0" layoutY="163.0" prefHeight="25.0" prefWidth="396.0" ripplerFill="#3749a6" text="Uninject" textFill="#fc17b3" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="About">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="503.0" fitWidth="854.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/background.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="307.0" layoutY="14.0" text="JPGFileInjector (c) 2019 - 2020 CrashedDevelopment" textFill="#6d21ae">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="421.0" fitWidth="622.0" layoutX="162.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/crasheddevelopment.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
