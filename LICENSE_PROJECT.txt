@@ -1,0 +1,27 @@
+***************************************************************************************************
+Copyright © 2019 CrashedDevelopment
+License version: 1.0.0
+License last update: 08-19-2019 / 19.08.2019
+Project: JPGFileInjector (https://github.com/crasheddevelopment/JPGFileInjector/)
+Project developer/s:
+CrashedLife | Sören (https://github.com/CrashedLife)
+
+1 TERMS OF USE:
+    1.1 End user license agreement
+        Every user accepts automatically this license.
+
+    1.2 Distribution
+        Everybody can distribute this software for free and non-commercial.
+        Distribution with the source code of this project for commercial profit is not allowed!
+        Commercial use is only allowed if there is a consent from the developers.
+        This license must be enclosed with a distribution of this software.
+        It is not permitted to use this source code to distribute malware or other items that may harm the third party!
+
+    1.3 Libraries
+        This project contains libraries from other developers.
+        If the developers do not want a library to be used by us, please contact us immediately and we will remove this library as soon as possible in other software versions.
+
+    1.4 License
+        This license may be edited at any time without information to the users.
+        It is not allowed to change the license without authorization!
+***************************************************************************************************
