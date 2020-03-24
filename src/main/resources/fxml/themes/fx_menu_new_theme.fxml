@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--
+  ~ Copyright © 2019 CrashedDevelopment
+  ~
+  ~ This is a non-commercial project.
+  ~ All rights belong to their respective owners.
+  ~ You are allowed to change the software as long as no illegal content is created and / or distributed.
+  ~ All rights and information about the used libraries in the LICENSE_APACHE_2.0.data / LIBRARIES and at the point "Libraries" and "Used Libraries" here.
+  ~ The license from the project contains in the file LICENSE_PROJECT!
+  ~
+  ~ You are allowed to use following changes at this software:
+  ~     - Creates new features
+  ~     - Modify source code. (Without the identification of "// Do not remove this.")
+  ~     - Publish your changes. (non-commercial)
+  ~     - Send changes to us to improve or add new features.
+  ~
+  ~ You are not allowed to do:
+  ~     - Publish the software for a commercial use without our permission.
+  ~     - Infect users with viruses or to do any other illegal content.
+  ~
+  ~ For news, updates and support:
+  ~ https://discord.gg/CBkXXKa
+  ~
+  ~ Development Team:
+  ~
+  ~ CrashedLife | Sören (Developed everything.):
+  ~ Discord: CrashedLife#9417
+  ~ Twitter: https://twitter.com/sqliCrashedLife
+  ~ Github: https://github.com/CrashedLife
+  ~ YouTube: https://www.youtube.com/channel/UC3alimqGC2YcgEK7jc_N4mg
+  ~
+  ~ Luca (Staff):
+  ~ Discord: Luca.#1337
+  ~ Twitter: https://twitter.com/luca1337_
+  ~
+  ~ Libraries:
+  ~ We used libraries to complete our project and respect and thanks every single owner that created the library.
+  ~ If some owner has problems with it please contact us.
+  ~
+  ~ Used Libraries:
+  ~  JFoeniX © jfoenixadmin
+  ~  Github: https://github.com/jfoenixadmin/
+  ~  JFoeniX: https://github.com/jfoenixadmin/JFoenix
+  ~  License: Apache 2.0 (Under LICENSE_APACHE_2.0.txt)
+  -->
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="869.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.crasheddevelopment.jpgfileinjector.core.ui.controller.FXMenuController">
+  <tabs>
+    <Tab text="Injector">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="580.0" fitWidth="869.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/new_theme_background.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label blendMode="EXCLUSION" layoutX="391.0" layoutY="78.0" prefHeight="23.0" prefWidth="88.0" text="JPG File:" textFill="#ffb2b2">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label blendMode="EXCLUSION" layoutX="131.0" layoutY="115.0" text="Other file to inject (Can not be an jpg file!):" textFill="#ffb2b2">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="jpgPathTextField" blendMode="ADD" layoutX="487.0" layoutY="76.0" prefHeight="25.0" prefWidth="264.0" promptText="Enter path to .jpg">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="otherPathTextField" blendMode="ADD" layoutX="487.0" layoutY="112.0" onAction="#inject" prefHeight="25.0" prefWidth="270.0" promptText="Enter path to other file">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton buttonType="RAISED" layoutX="764.0" layoutY="64.0" onAction="#browseJPGFile" prefHeight="25.0" prefWidth="95.0" ripplerFill="#c32929" text="Browse file" textFill="#aeaeae">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="767.0" layoutY="113.0" onAction="#browseOtherFile" ripplerFill="#c32929" text="Browse file" textFill="#aeaeae">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="479.0" layoutY="164.0" onAction="#inject" prefHeight="28.0" prefWidth="316.0" ripplerFill="#c32929" text="Inject" textFill="#c22177">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="479.0" layoutY="201.0" onAction="#uninject" prefHeight="28.0" prefWidth="316.0" ripplerFill="#c32929" text="Uninject" textFill="#c22177">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Settings">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="580.0" fitWidth="869.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/new_theme_background.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="14.0" onAction="#openThemeSettings" ripplerFill="#c32929" text="Themes" textFill="#8c76ff">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+    <Tab text="About">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="580.0" fitWidth="869.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/new_theme_background.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="476.0" layoutY="420.0" prefHeight="23.0" prefWidth="385.0" text="JPGFileInjector (c) 2019 CrashedDevelopment" textFill="#8800ff">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="476.0" layoutY="443.0" text="Developed by CrashedLife" textFill="#8d0505" />
+                  <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="14.0" onAction="#openGithubLink" prefHeight="25.0" prefWidth="110.0" ripplerFill="#ab3838" text="Github" textFill="#b5e47c">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
