@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.layout.*?>
+
+<!--
+  ~ Copyright © 2019 CrashedDevelopment
+  ~
+  ~ This is a non-commercial project.
+  ~ All rights belong to their respective owners.
+  ~ You are allowed to change the software as long as no illegal content is created and / or distributed.
+  ~ All rights and information about the used libraries in the LICENSE_APACHE_2.0.data / LIBRARIES and at the point "Libraries" and "Used Libraries" here.
+  ~ The license from the project contains in the file LICENSE_PROJECT!
+  ~
+  ~ You are allowed to use following changes at this software:
+  ~     - Creates new features
+  ~     - Modify source code. (Without the identification of "// Do not remove this.")
+  ~     - Publish your changes. (non-commercial)
+  ~     - Send changes to us to improve or add new features.
+  ~
+  ~ You are not allowed to do:
+  ~     - Publish the software for a commercial use without our permission.
+  ~     - Infect users with viruses or to do any other illegal content.
+  ~
+  ~ For news, updates and support:
+  ~ https://discord.gg/CBkXXKa
+  ~
+  ~ Development Team:
+  ~
+  ~ CrashedLife | Sören (Developed everything.):
+  ~ Discord: CrashedLife#9417
+  ~ Twitter: https://twitter.com/sqliCrashedLife
+  ~ Github: https://github.com/CrashedLife
+  ~ YouTube: https://www.youtube.com/channel/UC3alimqGC2YcgEK7jc_N4mg
+  ~
+  ~ Luca (Staff):
+  ~ Discord: Luca.#1337
+  ~ Twitter: https://twitter.com/luca1337_
+  ~
+  ~ Libraries:
+  ~ We used libraries to complete our project and respect and thanks every single owner that created the library.
+  ~ If some owner has problems with it please contact us.
+  ~
+  ~ Used Libraries:
+  ~  JFoeniX © jfoenixadmin
+  ~  Github: https://github.com/jfoenixadmin/
+  ~  JFoeniX: https://github.com/jfoenixadmin/JFoenix
+  ~  License: Apache 2.0 (Under LICENSE_APACHE_2.0.txt)
+  -->
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="429.0" prefWidth="668.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.crasheddevelopment.jpgfileinjector.core.ui.controller.FXThemeController">
+   <children>
+      <JFXNodesList layoutX="14.0" layoutY="14.0" prefHeight="15.0" prefWidth="13.0">
+         <children>
+            <JFXButton buttonType="RAISED" ripplerFill="#b83535" text="Themes" textFill="#6181f8">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#changeThemeToOld" buttonType="RAISED" ripplerFill="#b83535" text="Old" textFill="#3a86cd">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#changeThemeToNew" buttonType="RAISED" ripplerFill="#b83535" text="New" textFill="#3a86cd">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#changeThemeToCustom" buttonType="RAISED" ripplerFill="#b83535" text="Custom" textFill="#3a86cd">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </JFXNodesList>
+      <Label layoutX="259.0" layoutY="19.0" text="Custom theme file path:" textFill="#3a86cd">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="customThemePathTextField" onAction="#changeThemeToCustom" layoutX="259.0" layoutY="42.0" prefHeight="25.0" prefWidth="236.0" promptText="Enter path">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton onAction="#browseCustomTheme" buttonType="RAISED" layoutX="505.0" layoutY="42.0" prefHeight="28.0" prefWidth="149.0" ripplerFill="#b83535" text="Browse file" textFill="#6181f8">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton onAction="#goBack" buttonType="RAISED" layoutX="505.0" layoutY="381.0" prefHeight="28.0" prefWidth="149.0" ripplerFill="#b83535" text="Go back" textFill="#6181f8">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>
