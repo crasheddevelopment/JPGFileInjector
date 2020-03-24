@@ -1,4 +1,7 @@
-# JPGFileInjector
+# What is JPGFileInjector?
 JPGFileInjector is a file injector that written in Java.
+You can inject every program inject a jpg file and you can uninject it!
 
-Latest version of the project: https://github.com/crasheddevelopment/JPGFileInjector/tree/1.2.0
+# Where can I report bugs?
+You can report bugs by creating an issue or letting us know on our Discord Server!
+Discord Server: https://discord.gg/c4vsfrm
