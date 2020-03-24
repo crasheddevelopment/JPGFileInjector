@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--
+  ~ Copyright © 2019 CrashedDevelopment
+  ~
+  ~ This is a non-commercial project.
+  ~ All rights belong to their respective owners.
+  ~ You are allowed to change the software as long as no illegal content is created and / or distributed.
+  ~ All rights and information about the used libraries in the LICENSE_APACHE_2.0 / LIBRARIES and at the point "Libraries" and "Used Libraries" here.
+  ~
+  ~ You are allowed to use following changes at this software:
+  ~     - Creates new features
+  ~     - Modify source code. (Without the identification of "// Do not remove this.")
+  ~     - Publish your changes. (non-commercial)
+  ~     - Send changes to us to improve or add new features.
+  ~
+  ~ You are not allowed to do:
+  ~     - Publish the software for a commercial use without our permission.
+  ~     - Infect users with viruses or to do any other illegal content.
+  ~
+  ~ For news, updates and support:
+  ~ https://discord.gg/CBkXXKa
+  ~
+  ~ Development Team:
+  ~
+  ~ CrashedLife | Sören (Developed everything.):
+  ~ Discord: CrashedLife#9417
+  ~ Twitter: https://twitter.com/sqliCrashedLife
+  ~ Github: https://github.com/CrashedLife
+  ~ YouTube: https://www.youtube.com/channel/UC3alimqGC2YcgEK7jc_N4mg
+  ~
+  ~ Luca (Staff):
+  ~ Discord: Luca.#1337
+  ~ Twitter: https://twitter.com/luca1337_
+  ~
+  ~ Libraries:
+  ~ We used libraries to complete our project and respect and thanks every single owner that created the library.
+  ~ If some owner has problems with it please contact us.
+  ~
+  ~ Used Libraries:
+  ~  JFoeniX © jfoenixadmin
+  ~  Github: https://github.com/jfoenixadmin/
+  ~  JFoeniX: https://github.com/jfoenixadmin/JFoenix
+  ~  License: Apache 2.0 (Under LICENSE_APACHE_2.0)
+  -->
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="869.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.crasheddevelopment.jpgfileinjector.core.ui.controller.FXMenuController">
+  <tabs>
+    <Tab text="Injector">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="496.0" fitWidth="878.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/background.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="23.0" prefWidth="86.0" text="JPG File:" textFill="#2e8782">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="94.0" text="Other file to inject (Can not be an jpg file!):" textFill="#2e8782">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="jpgPathTextField" layoutX="14.0" layoutY="37.0" prefHeight="25.0" prefWidth="264.0" promptText="Enter path to .jpg">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="otherPathTextField" onAction="#inject" layoutX="14.0" layoutY="131.0" prefHeight="25.0" prefWidth="270.0" promptText="Enter path to other file">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton onAction="#browseJPGFile" buttonType="RAISED" layoutX="284.0" layoutY="37.0" prefHeight="25.0" prefWidth="95.0" ripplerFill="#c32929" text="Browse file" textFill="#8c76ff">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton onAction="#browseOtherFile" buttonType="RAISED" layoutX="288.0" layoutY="131.0" ripplerFill="#c32929" text="Browse file" textFill="#8c76ff">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton onAction="#inject" buttonType="RAISED" layoutX="14.0" layoutY="184.0" ripplerFill="#c32929" text="Inject" textFill="#8c76ff">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton onAction="#uninject" buttonType="RAISED" layoutX="213.0" layoutY="184.0" ripplerFill="#c32929" text="Uninject" textFill="#8c76ff">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="About">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="496.0" fitWidth="878.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/background.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="23.0" prefWidth="385.0" text="JPGFileInjector (c) 2019 CrashedDevelopment" textFill="#9e2424">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="37.0" text="Developed by CrashedLife" />
+                  <JFXButton onAction="#openGithubLink" buttonType="RAISED" layoutX="745.0" layoutY="432.0" prefHeight="25.0" prefWidth="110.0" ripplerFill="#ab3838" text="Github" textFill="#8d3b3b">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

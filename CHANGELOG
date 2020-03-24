@@ -1,0 +1,10 @@
+Version 1.0.1
+    build 2:
+        + Added changelog.
+        + Added logo.
+        = Improves language.
+        - Removes file extensions from the files: LICENSE_APACHE_2.0.txt -> LICENSE_APACHE_2.0 | LICENSE_PROJECT.txt -> LICENSE_PROJECT | LIBRARIES.txt -> LIBRARIES
+
+Version 1.0.0
+    build 1:
+        = Releases JPGFileInjector.
