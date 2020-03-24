@@ -1,0 +1,44 @@
+Version 1.1.2
+    build 5:
+        = Fixes:
+            - Bad english language xd
+
+        = Improvement:
+            - Code
+
+        = Updated:
+            - Updated Copyright year.
+
+        - Removed:
+           - Removed file extension from the file: LICENSE_APACHE_2.0
+
+Version 1.1.1
+    build 4:
+        = HOTFIX:
+            - Themes:
+                - Old theme:
+                    - Changes size of the "Themes" button.
+
+                - New theme:
+                    - The white border has been fixed in the "New" theme.
+                    - Changes size of the "Themes" button.
+
+Version 1.1.0
+    build 3:
+        + Added settings tab.
+        + Added themes mode.
+        + Added custom theme setting.
+        = Improves language.
+        = Change file extension from LICENSE_APACHE_2.0 to LICENSE_APACHE.2.0.data to fix .0 extension bug.
+        = Updated Copyright.
+
+Version 1.0.1
+    build 2:
+        + Added changelog.
+        + Added logo.
+        = Improves language.
+        - Removes file extensions from the files: LICENSE_APACHE_2.0.txt -> LICENSE_APACHE_2.0 | LICENSE_PROJECT.txt -> LICENSE_PROJECT | LIBRARIES.txt -> LIBRARIES
+
+Version 1.0.0
+    build 1:
+        = Releases JPGFileInjector.
